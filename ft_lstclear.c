@@ -6,7 +6,7 @@
 /*   By: wibouamo <wibouamo@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 00:02:06 by wibouamo          #+#    #+#             */
-/*   Updated: 2026/11/10 15:09:00 by wibouamo         ###   ########.fr       */
+/*   Updated: 2026/11/10 22:21:28 by wibouamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		free(*lst);
 		*lst = tmp;
 	}
+	*lst = NULL;
 }
