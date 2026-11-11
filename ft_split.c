@@ -6,7 +6,7 @@
 /*   By: wibouamo <wibouamo@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 04:21:41 by wibouamo          #+#    #+#             */
-/*   Updated: 2026/11/10 14:51:09 by wibouamo         ###   ########.fr       */
+/*   Updated: 2026/11/11 22:21:57 by wibouamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static size_t	count_word(char const *s, char c)
 
 	counter = 0;
 	i = 0;
-	while (s[i] == c)
+	while (s[i] && s[i] == c)
 		i++;
 	if (s[i] == '\0')
 		return (0);
